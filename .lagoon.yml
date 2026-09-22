@@ -1,6 +1,10 @@
 docker-compose-yaml: docker-compose.yml
 
-network-policies:
-- service: nginx
-  organizations: 
-  - name: self
+environments:
+  main:
+    network-policies:
+    - service: nginx
+      projects: 
+      # this allows only the production environment from frontend-test to access nginx
+      - name: frontend-test
+        environment-type: production
