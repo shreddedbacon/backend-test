@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     labels:
-      lagoon.type: nginx
+      lagoon.type: basic
+      lagoon.service.usecomposeports: true
     ports:
       - "8080:8080"
