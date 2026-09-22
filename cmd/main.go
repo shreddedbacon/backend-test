@@ -22,7 +22,7 @@ var page = `<html>
 <body bgcolor="#4c7ab0">
 <h1 style="color:#000000">Hello world Backend!</h1>
 </body>
-</html>\n`
+</html>`
 
 var cms = `<html>
 <body bgcolor="#56b54e">
@@ -30,7 +30,7 @@ var cms = `<html>
 <h1 style="color:#000000">Project: %s</h1>
 <h1 style="color:#000000">Environment: %s</h1>
 </body>
-</html>\n`
+</html>`
 
 var api = `<html>
 <body bgcolor="#fcba03">
@@ -38,7 +38,7 @@ var api = `<html>
 <h1 style="color:#000000">Project: %s</h1>
 <h1 style="color:#000000">Environment: %s</h1>
 </body>
-</html>\n`
+</html>`
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(fmt.Sprintf("%v\n", page)))
