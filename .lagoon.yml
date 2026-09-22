@@ -1,0 +1,6 @@
+docker-compose-yaml: docker-compose.yml
+
+network-policies:
+- service: nginx
+  organizations: 
+  - name: self
